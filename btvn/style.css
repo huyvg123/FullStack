@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    height: auto;
+}
+
+div {
+    display: block;
+}
+
+hr {
+    border-top: 1.5px solid #f90; ;
+    width: 100px;
+}
+
+/* head-container */
+.head-container {
+    display: flex;
+    justify-content: space-around;
+    background: #203e48;
+    height: 280px;
+}
+
+/* left-head */
+img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    border: 10px solid transparent;
+    padding: 6px;
+    -webkit-border-image: url(img.jpg) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(img.jpg) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(img.jpg) 30 stretch;
+    margin-bottom: 15px;
+    margin: 30px;
+    background: #f90;
+    
+}
+
+.infomation {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.head-container .number {
+    color: #f90;
+}
+
+/* .right-container */
+.right-head {
+    color: #ffffff;
+}
+
+.top-wrapper {
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+.bot-wrapper {
+    margin-top: 10px;
+}
+
+.head-container h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.head-container h4{
+    color: #f90;
+    font-size: 20px;
+}
+
+.head-container p {
+    font-size: 15px;
+}
+
+/* body-container */
+.body-container {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+/* left-body */
+.left-body {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.body-container .number {
+    font-size: 75px;
+    color: #f90;
+    margin-right: 20px;
+}
+
+.body-container .level {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.body-container .row1 {
+    margin-top: 100px;
+}
+
+.body-container .row2 {
+    margin-top: 150px;
+}
+/* .right-body */
+.right-body{
+    margin-top: 50px;
+    width: 548px;
+}
+
+
+
+.time {
+    background: #203e48;
+    color: #ffffff
+}
+
+.right-body div div{
+    margin-top: 10px;
+
+}
+
+.right-container1 {
+    margin-top: 100px;
+    width: 500px;
+}
+
+
+.right-container2 {
+    margin-top: 60px;
+}
+
+/* .bottom-container */
+.bottom-container {
+    display: flex;
+    justify-content: space-around;
+    background: #203e48;
+}
+
+.stars-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px;
+    width: 300px;
+}
+
+.input-wrapper .symbol-wrapper button {
+    width: 30px;
+    font-size: 20px;
+}
+
+.bottom-container .input-wrapper span {
+    font-size: 30px;
+    color: #f90;
+}
+
+.bottom-container .input-wrapper .stars-wrapper span {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.input-wrapper p {
+    font-size: 15px;
+    color: #ffffff;
+}
+
