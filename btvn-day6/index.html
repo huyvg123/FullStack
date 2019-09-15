@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="quote-container">
+      <h2 id="quote" class="row quote-wrapper">Karma is a bitch</h2>
+      <h4 id="author" class="row author-wrapper">Random thot</h4>
+    </div>
+    <div class="button-container">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <button id="click" class="button-wrapper">New Quote</button>
+    </div>
+  </div>
+ 
+ 
+  <script>
+    $(document).ready(function () {
+      getQuote();
+    })
+    $("#click").click(function () {
+      getQuote();
+    })
+    function getQuote() {
+      hideQuote();
+      $.ajax({
+        url: "https://api.quotable.io/random",
+        type: "GET",
+        success: function (data) {
+          if (data) {
+            const { content, author } = data;
+            const contentData = content;
+            const authorData = author;
+            $("#quote").html(contentData);
+            $("#author").html(authorData);
+            showQuote();
+          }
+        },
+        error: function (error) {
+          alert('website error')
+          showQuote();
+        }
+      });
+    }
+    function hideQuote() {
+      $(".row").removeClass("").addClass("");
+    }
+    function showQuote() {
+      $(".row").removeClass("").addClass("");
+    }
+  </script>
+</body>
+
+</html>
